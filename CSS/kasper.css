@@ -175,26 +175,6 @@ header .container .search i:hover {
   position: relative;
 }
 
-.landing i.left-angle {
-  color: white;
-  font-size: 30px;
-  padding: 20px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.landing i.right-angle {
-  color: white;
-  font-size: 30px;
-  padding: 20px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .landing .overlay {
   position: absolute;
   left: 0;
@@ -217,6 +197,12 @@ header .container .search i:hover {
   justify-content: flex-end;
 }
 
+@media (max-width:767px) {
+  .landing .text {
+    width: 100%;
+  }
+}
+
 .landing .text .content {
   max-width: 500px;
 }
@@ -233,6 +219,53 @@ header .container .search i:hover {
   line-height: 2;
 }
 
+.landing .change-background {
+  color: #ddd;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
+@media (max-width:767px) {
+  .landing .change-background {
+    display: none;
+  }
+}
+
+i.fa-angle-left {
+  left: 20px;
+}
+
+i.fa-angle-right {
+  right: 20px;
+}
+
+.landing .change-background:hover{
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.landing .bullets {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.landing .bullets li {
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.landing .bullets li.active,
+.landing .bullets li:hover {
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+}
 
 /* end landing */
