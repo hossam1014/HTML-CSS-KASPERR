@@ -2,8 +2,9 @@
 
 
 :root {
-  --main-color: #19c8fa;
-  --transparent-color: rgb(15 116 143 / 70%)
+  --main-color: #00c7fc;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
 }
 
 /* end variables */
@@ -54,6 +55,53 @@ a {
   }
 }
 /* End Global Rules  */
+
+/* start main-heading component  */
+
+.main-heading {
+  text-align: center;
+}
+
+.main-heading h2 {
+  font-size: 40px;
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+.main-heading h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #333;
+  bottom: -30px;
+  width: 120px;
+}
+.main-heading h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  bottom: -38px;
+  background-color: white;
+}
+
+.main-heading p {
+  width: 550px;
+  margin: 0 auto 100px;
+  max-width: 100%;
+  line-height: 2;
+  color: #777;
+}
+
+
+/* end main-heading component  */
 
 
 /* start header  */
@@ -181,7 +229,7 @@ header .container .search i:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .landing .text {
@@ -269,3 +317,57 @@ i.fa-angle-right {
 }
 
 /* end landing */
+
+/* start services  */
+
+.services {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+@media (min-width: 768px) {
+  .services .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+  }
+}
+
+.services-content .srv-box {
+  display: flex;
+}
+
+
+.services-content .srv-box i {
+  margin-right: 50px;
+  color: #424344;
+}
+
+@media (max-width:767px) {
+  .services-content .srv-box {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .services-content .srv-box i {
+    margin: 0 0 30px;
+  }
+}
+
+.services-content .srv-box .text {
+
+}
+
+.services-content .srv-box .text h3 {
+  margin-bottom: 30px;
+  color: var(--main-color);
+}
+
+.services-content .srv-box .text p {
+  line-height: 2;
+  color: #777;
+}
+
+
+/* end services  */
