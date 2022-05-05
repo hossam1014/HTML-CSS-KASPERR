@@ -355,9 +355,6 @@ i.fa-angle-right {
   }
 }
 
-.services-content .srv-box .text {
-
-}
 
 .services-content .srv-box .text h3 {
   margin-bottom: 30px;
@@ -371,3 +368,84 @@ i.fa-angle-right {
 
 
 /* end services  */
+
+/* start design  */
+
+.design {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  height: 600px;
+  background-image: url(../image/design.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.design::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.design .image,
+.design .text  {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.design .image {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .design .image {
+    display: none;
+  }
+}
+
+.design .image img {
+  position: relative;
+  bottom: -150px;
+}
+
+.design .text {
+  color: white;
+  padding: 50px;
+  background-color: var(--transparent-color);
+}
+
+.design .text h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.design .text ul li {
+  padding: 15px 0;
+}
+
+.design .text ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f108';
+  font-weight: 900;
+  margin-right: 20px;
+  position: relative;
+  top: 1px;
+}
+
+
+/* end design  */
+
+/* start portfolio */
+
+.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+/* end portfolio */
