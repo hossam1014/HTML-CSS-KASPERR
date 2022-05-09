@@ -803,7 +803,147 @@ i.fa-angle-right {
   border: none;
 }
 
-.skills .our-skills {
+.skills .our-skills .prog-holder {
+  margin-bottom: 30px;
+}
 
+.skills .our-skills .prog-holder h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+.skills .our-skills .prog-holder .prog {
+  background-color: #dedadc;
+  height: 30px;
+}
+
+.skills .our-skills .prog-holder .prog span {
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+  position: relative;
+}
+.skills .our-skills .prog-holder .prog span::before {
+  content: attr(data-progress);
+  background-color: black;
+  color: white;
+  padding: 4px 0;
+  position: absolute;
+  width: 40px;
+  text-align: center;
+  right: -20px;
+  top: -30px;
+  font-size: 14px;
+  border-radius: 15%;
+}
+.skills .our-skills .prog-holder .prog span::after {
+  content: '';
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent;
+  right: -5px;
+  top: -7px;
 }
 /* end skills */
+
+/* start quote */
+
+.quote {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url(../image/quote.jpg);
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.quote::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.quote .container {
+  position: relative;
+}
+
+.quote .container q {
+  font-size: 30px;
+  margin: 55px 0;
+  display: block;
+}
+
+.quote .container p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+/* end quote */
+
+
+/* start pricing */
+
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+
+}
+
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.pricing .plans .plan {
+  text-align: center;
+  background-color: #FCFCFC;
+}
+
+.pricing .plans .plan .head {
+  padding: 40px 20px;
+  border-top: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+
+.pricing .plans .plan .head h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.pricing .plans .plan .head span {
+  font-size: 55px;
+  font-weight: 600;
+}
+.pricing .plans .plan .head span::before {
+  content: '$';
+  font-size: 25px;
+  font-weight: normal;
+  position: relative;
+  top: -40px;
+  margin-right: 15px;
+}
+.pricing .plans .plan .head span::after {
+  content: '/MO';
+  font-size: 20px;
+  font-weight: normal;
+  position: relative;
+  right: -15px;
+}
+
+.pricing .plans .plan ul {
+  
+}
+
+.pricing .plans .plan ul li {
+
+}
+
+/* end pricing */
