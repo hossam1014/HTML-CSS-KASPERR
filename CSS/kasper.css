@@ -627,3 +627,183 @@ i.fa-angle-right {
   }
 }
 /* end video  */
+
+/* start about  */
+
+.about {
+  padding-top: var(--section-padding);
+  overflow: hidden;
+  height: 635px;
+  text-align: center;
+}
+
+.about img {
+  position: relative;
+  left: -35px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .about img {
+    left: -15px;
+  }
+  .about {
+    height: 534px;
+  }
+}
+/* end about  */
+
+/* start statics  */
+
+.statics {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+  background-image: url(../image/prt-5.webp);
+  background-size: cover;
+  position: relative;
+}
+.statics::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.statics .container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: var(--transparent-color);
+}
+
+.statics .container .box {
+  padding: 50px;
+  z-index: 2;
+}
+@media (max-width:767px) {
+  .statics .container .box {
+    flex-basis: 100%;
+  }
+}
+
+.statics .container .box i {
+  color: white;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+}
+.statics .container .box .number {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.statics .container .box p {
+  color: white;
+  font-size: 14px;
+}
+
+/* end statics  */
+
+/* strat skills */
+
+.skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding); 
+}
+
+.skills .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+@media (min-width:992px) {
+  .skills .container > div {
+    flex-basis: 45%;
+  }
+}
+
+.skills .container > div > h3 {
+  margin: 0 0 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.skills .container > div > p {
+  color: #777;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.skills .testimonials .content {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.skills .testimonials .content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+@media (max-width:767px) {
+  .skills .testimonials .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills .testimonials .content img {
+    margin: 0 auto 20px;
+  }
+}
+
+.skills .testimonials .content .text {
+  line-height: 1.8;
+  border-bottom: 1px solid #ccc;
+}
+.skills .testimonials .content p{
+  color: #777;
+  text-align: right;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.skills .testimonials .bullets {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 65px;
+}
+
+.skills .testimonials .bullets li {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.skills .testimonials .bullets li.active,
+.skills .testimonials .bullets li:hover {
+  background-color: var(--main-color);
+  border: none;
+}
+
+.skills .our-skills {
+
+}
+/* end skills */
