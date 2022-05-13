@@ -1019,7 +1019,7 @@ i.fa-angle-right {
 }
 
 .subscribe .container form {
-  flex-basis: 50%;
+  flex-basis: 80%;
   display: flex;
   position: relative;
   width: 500px;
@@ -1041,6 +1041,7 @@ i.fa-angle-right {
   border-right: none;
   width: calc(100% - 130px);
 	font-size: 18px;
+  color: white;
 }
 
 .subscribe .container form input[type=submit] {
@@ -1078,3 +1079,95 @@ i.fa-angle-right {
 }
 
 /* end subscribe */
+
+/* start contact  */
+
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.contact .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .contact .content {
+    flex-direction: column;
+  }
+}
+
+.contact .content form {
+  flex-basis: 70%;
+  position: relative;
+}
+
+.contact .content form .main-input {
+  padding: 20px;
+  display: block;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.contact .content form .main-input:focus {
+  outline: 1px solid var(--main-color);
+  border-radius: 5px;
+}
+
+.contact .content form textarea.main-input {
+  height: 15em;
+}
+
+.contact .content form input[type="submit"]{
+  background-color: var(--main-color);
+  border: none;
+  padding: 20px 40px;
+  position: absolute;
+  right: 0;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact .content .info {
+  flex-basis: 25%;
+}
+
+@media (max-width: 767px) {
+  .contact .content .info {
+    order: -1;
+    text-align: center;
+  }
+}
+
+.contact .content .info h4 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.contact .content .info .phone {
+  display: block;
+  color: #777;
+  margin-bottom: 10px;
+}
+.contact .content .info h4:last-of-type {
+  margin-top: 90px;
+}
+@media (max-width: 767px) {
+  .contact .content .info h4:last-of-type {
+    margin-top: 30px;
+  }
+}
+
+.contact .content .info address {
+  color: #777;
+  line-height: 2;
+}
+@media (max-width: 767px) {
+  .contact .content .info address {
+    margin-bottom: 40px;
+  }
+}
+
+/* end contact  */
