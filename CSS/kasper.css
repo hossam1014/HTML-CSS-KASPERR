@@ -117,7 +117,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  min-height: 77.19px;
+  min-height: 77px;
 }
 header .container::after {
   content: '';
